@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+        <div id="d1"></div>
+        <div id="d1"></div>
+
+
+
+        <script>
+            var names = ["tushar", "Nilesh", "Rohan", "Suraj", "Kishor", "Amol"];
+
+            //Built in methods for JS
+            //push. pop, unshift, shift, slice, sort, reverse
+            names.push("Rahul");//add element at the last.
+            names.unshift("Parth");//add element to the first position
+            names.unshift("Pratik");
+            names.pop();//Remove the last element
+            names.shift();//remove the first element
+
+
+            //slice ->Insert an element in between in an array, at  same time we can replace the elements
+            names.slice(1, 0, "Ganesh", "Sujeet", "Vivek");
+
+            var newList = names.slice(2, 8);
+            names.sort();
+            names.reverse();
+            document.getElementById("d1").innerHTML = names;
+            document.getElementById("d2").innerHTML = newList;
+
+
+
+        </script>
+</body>
+</html>
