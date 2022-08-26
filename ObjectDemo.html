@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="d1"></div>
+
+    <script>
+        var emp = {
+            eid: 101,
+            ename: "suraj",
+            salary: 35000,
+            display: function () {
+                return "eid =" + this.eid + " emp name =" + this.ename + " salary =" + this.salary;
+            },
+            calculation: function () {
+                var result;
+                result = this.salary + 500;
+                return result;
+            }
+        }
+        document.getElementById("d1").innerHTML = emp.display();
+
+
+    </script>
+</body>
+</html>

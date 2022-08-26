@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    // product-> id, name,price  - display function  , discount-> 10 %
+
+    <script>
+        var emp = {
+            id: 101,
+            name: "Mouse",
+            Price:500,
+            display: function () {
+                return "Id =" + this.id + "Product Name =" + this.name + " Price =" + this.Price;
+            },
+            calculation: function () {
+                var result;
+                result = this.Price;
+                return result;
+            }
+        }
+        document.getElementById("d1").innerHTML = emp.display();
+
+    </script>
+
+</body>
+</html>
