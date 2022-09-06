@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JSArray.js"></script>
+</head>
+<body>
+    <input type="text" id="d1"></input>
+    <!--<div id="d2"></div>-->    
+    <script>
+        var num = [5, 3, 9, 5, 1];
+        num.push(5);
+        num.unshift(9);
+        num.unshift(1);
+        nnum.pop();
+        num.shift();
+        num.splice(1, 0, "ganesh", "sujeet", "vivek");
+
+        var newlist = names.slice(2, 8);   
+        num.sort();
+        num.reverse();
+        document.getElementById("d1").innerHTML = num;
+        document.getElementById("d2").innerHTML = newlist;
+
+    </script>
+
+</body>
+</html>
